@@ -43,13 +43,13 @@ python steam_scraper.py
 
 ## Notes
 
-- **Rate limiting**: both scripts wait 1.5 seconds between page requests to avoid
+- **Rate limiting**: the script waits 1.5 seconds between page requests to avoid
   being blocked by Steam. Please don't remove this delay.
 - **Tag IDs**: Steam occasionally changes its internal tag ID numbers. If a tag
   filter stops returning expected results, check the tag's current ID by selecting
   it on the live Steam search page and inspecting the resulting URL's `tags=`
   parameter.
 - **Region pricing**: prices depend on Steam's detected region for the `cc=in`
-  parameter. Occasional formatting differences (e.g. games with decimal paise vs.
-  whole rupees) are handled by the price-parsing logic, but edge cases may still
+  parameter. Occasional formatting differences (e.g. games with decimal prices vs.
+  whole prices) are handled by the price-parsing logic, but edge cases may still
   slip through.
